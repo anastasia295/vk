@@ -1,4 +1,9 @@
 import React from 'react';
+import Flexbox from '../../shared/Flexbox';
+import AreA from '../../shared/Area';
+import Button from '../../shared/Button';
+import Text from '../../shared/Text';
+import Input from '../../shared/Input';
 import {
   Header,
   Main,

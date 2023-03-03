@@ -52,11 +52,11 @@ export const Vk1 = styled.img`
   margin-top: 18px;
   margin-left: -295px;
 `;
-export const TextVK1 = styled.div`
+/*export const TextVK1 = styled.div`
   font-size: 20px;
   margin-top: -27px;
-  margin-right: 250px;
-`;
+  margin-right: 250px; 
+`;*/
 export const Vk = styled.img`
   height: 80px;
   width: 60px;

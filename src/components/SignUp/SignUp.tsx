@@ -1,4 +1,9 @@
 import React from 'react';
+import Flexbox from '../../shared/Flexbox';
+import Area from '../../shared/Area';
+import Button from '../../shared/Button';
+import Text from '../../shared/Text';
+import Input from '../../shared/Input';
 import {
   Content,
   ContentID,
@@ -10,7 +15,6 @@ import {
   Textagreement,
   TextNumber,
   TextVK,
-  TextVK1,
   TextVKID,
   TextVKID1,
   TextАccount,
@@ -28,7 +32,9 @@ function SignUp() {
       <Content>
         <ContentID>
           <Vk1 src={vk} alt='' />
-          <TextVK1>ID</TextVK1>
+          <Area mt='-27' mr='250'>
+            <Text fs='20'>ID</Text>
+          </Area>
           <TextVKID>ВКонтакте можно войти через VK ID</TextVKID>
           <Vk1 src={account} alt='' />
           <TextVK>Единый аккаунт для сервисов VK и партнёров</TextVK>

@@ -29,6 +29,19 @@ export const MyInput = styled.input`
   margin: 10px;
   padding-left: 19px;
 `;
+export const MyInput2 = styled.input`
+  background-color: #f5fffa;
+  font-size: 12px;
+  width: 240px;
+  height: 30px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #eee;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+`;
 
 export const MyImage = styled.img`
   height: 35px;
@@ -38,6 +51,41 @@ export const MyImage = styled.img`
 export const HeaderInp = styled.div`
   display: flex;
   flex-direction: row;
+`;
+export const Text2 = styled.div`
+  width: 560px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+`;
+
+export const Text3 = styled.div`
+  font-size: 15px;
+  color: #808080;
+  width: 560px;
+  text-align: center;
+  margin-top: 10px;
+`;
+export const Text4 = styled.div`
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+`;
+export const Text5 = styled.div`
+  font-size: 12px;
+  color: #808080;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+`;
+
+export const Text6 = styled.div`
+  font-size: 15px;
+  color: #808080;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 15px;
 `;
 
 export const Text7 = styled.div`
@@ -90,40 +138,6 @@ export const Vk = styled.img`
   margin-bottom: 15px;
 `;
 
-export const Text2 = styled.div`
-  width: 560px;
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 50px;
-  text-align: center;
-`;
-
-export const Text3 = styled.div`
-  font-size: 15px;
-  color: #808080;
-  width: 560px;
-  text-align: center;
-  margin-top: 10px;
-`;
-export const Text4 = styled.div`
-  text-align: center;
-  font-size: 19px;
-  font-weight: bold;
-`;
-export const MyInput2 = styled.input`
-  background-color: #f5fffa;
-  font-size: 12px;
-  width: 240px;
-  height: 30px;
-  border-radius: 4px;
-  outline: none;
-  border: 1px solid #eee;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-`;
-
 export const Mybutton = styled.button`
   width: 245px;
   height: 30px;
@@ -169,19 +183,4 @@ export const Mybutton3 = styled.button`
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
-`;
-export const Text5 = styled.div`
-  font-size: 12px;
-  color: #808080;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-`;
-
-export const Text6 = styled.div`
-  font-size: 15px;
-  color: #808080;
-  text-align: center;
-  margin-top: 17px;
-  margin-bottom: 15px;
 `;
