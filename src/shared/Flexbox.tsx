@@ -4,7 +4,7 @@ const Flexbox = styled.div<FlexboxProps>`
   justify-content: ${(props) => props.justifyContent};
   display: ${(props) => props.display};
   align-items: ${(props) => props.aitems};
-  flex-direction: ${(props) => props.direction} ...other styles;
+  flex-direction: ${(props) => props.direction};
 `;
 
 interface FlexboxProps {
