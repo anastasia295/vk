@@ -13,7 +13,9 @@ interface AreaProps {
   bcolor?: string;
   bradius?: string;
   maxWidth?: string;
+  minWidth?: string;
   border?: string;
+  bbottom?: string;
   ta?: string;
 }
 const getMargin = (margin?: string): string => (margin === 'auto' ? margin : `${margin}px`);
@@ -38,6 +40,7 @@ const Area = styled.div<AreaProps>`
   height: ${(props) => props.height}px;
   margin-bottom: ${(props) => props.mb}px;
   max-width: ${(props) => props.maxWidth}px;
+  min-width: ${(props) => props.minWidth}px;
   background-color: ${(props) => props.bcolor};
   border-radius: ${(props) => props.bradius}px;
   margin-top: ${(props) => getMargin(props.mt)};
@@ -47,6 +50,7 @@ const Area = styled.div<AreaProps>`
   width: ${(props) => getNumber(props.width)};
   height: ${(props) => getNumber(props.height)};
   text-align: ${(props) => props.ta};
+  border-bottom: ${(props) => props.bbottom}px solid #c0c0c0;
 
   border: ${(props) => props.border}px solid #eee;
 `;

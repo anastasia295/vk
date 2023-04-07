@@ -5,6 +5,8 @@ const Flexbox = styled.div<FlexboxProps>`
   display: ${(props) => props.display};
   align-items: ${(props) => props.aitems};
   flex-direction: ${(props) => props.direction};
+  flex-wrap: ${(props) => props.fwrap};
+  align-content: ${(props) => props.acontent};
 `;
 
 interface FlexboxProps {
@@ -12,5 +14,7 @@ interface FlexboxProps {
   display?: string;
   aitems?: string;
   direction?: string;
+  fwrap?: string;
+  acontent?: string;
 }
 export default Flexbox;

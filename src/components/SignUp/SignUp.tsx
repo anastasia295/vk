@@ -71,17 +71,17 @@ function SignUp() {
           </Flexbox>
           <Flexbox display='block'>
             <Area mt='15'>
-              <Input width='300' placeholder='Введите номер телефона' />
+              <Input bcolor='#f5fffa' width='237' placeholder='Введите номер телефона' />
             </Area>
           </Flexbox>
-          <Area mt='10'>
+          <Area mt='10' ml='10'>
             <Text fs='18' color='#808080' ta='left'>
               <Inputcheckbox width='20' height='20' type='checkbox' name='happy' value='yes' />
               Сохранить вход
             </Text>
           </Area>
 
-          <Area mt='30'>
+          <Area mt='30' width='100%'>
             <Button bcolor='#0000ff' color='white' border='#0000ff'>
               Продолжить
             </Button>

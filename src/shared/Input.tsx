@@ -3,10 +3,10 @@ import styled from 'styled-components';
 interface InputProps {
   width?: string;
   bradius?: string;
+  bcolor?: string;
 }
 
 const Input = styled.input<InputProps>`
-  background-color: #f5fffa;
   font-size: 13px;
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +19,7 @@ const Input = styled.input<InputProps>`
 
   width: ${(props) => props.width}px;
   border-radius: ${(props) => props.bradius}px;
+  background-color: ${(props) => props.bcolor};
 `;
 
 export default Input;

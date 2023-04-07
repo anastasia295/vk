@@ -24,7 +24,7 @@ function SignIn() {
                   <Img height='50' width='155' src={svgImage} alt='' />
                 </Area>
                 <Area margin='10' pl='15'>
-                  <Input width='225' placeholder='Поиск' />
+                  <Input bcolor='#f5fffa' width='225' placeholder='Поиск' />
                   <Area ml='1' mt='-25'>
                     <Img height='16' width='21' src={lupa} alt='' />
                   </Area>
@@ -65,7 +65,12 @@ function SignIn() {
                           Вход ВКонтакте
                         </Text>
                         <Area mt='20' ml='auto' mr='auto'>
-                          <Input width='240' bradius='10' placeholder='Телефон или почта' />
+                          <Input
+                            bcolor='#f5fffa'
+                            width='240'
+                            bradius='10'
+                            placeholder='Телефон или почта'
+                          />
                         </Area>
                         <Area mt='10'>
                           <Text fs='18' color='#808080' ta='left'>

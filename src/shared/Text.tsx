@@ -7,6 +7,7 @@ const Text = styled.div<{
   lheight?: string;
   width?: string;
   color?: string;
+  wspace?: string;
 }>`
   font-size: ${(props) => props.fs}px;
   font-weight: ${(props) => props.fw};
@@ -14,6 +15,7 @@ const Text = styled.div<{
   color: ${(props) => props.color};
   line-height: ${(props) => props.lheight};
   width: ${(props) => props.width}px;
+  white-space: ${(props) => props.wspace};
 `;
 
 export default Text;
