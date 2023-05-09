@@ -85,7 +85,7 @@ function SignIn() {
                           </Text>
                         </Area>
                         <Area mt='40'>
-                          <Button bcolor='#0000ff' color='white'>
+                          <Button ml='auto' mr='auto' bcolor='#0000ff' color='white'>
                             <Text fs='15'> Войти </Text>
                           </Button>
                         </Area>
@@ -95,7 +95,7 @@ function SignIn() {
                           </Text>
                         </Area>
                         <Area mt='25'>
-                          <Button bcolor='white'>
+                          <Button ml='auto' mr='auto' bcolor='white'>
                             <Text fs='15'>QR-код </Text>
                           </Button>
                         </Area>
@@ -104,7 +104,7 @@ function SignIn() {
                     <Area height='150' width='340' bcolor='white' mt='20' bradius='10' border='1'>
                       <Flexbox>
                         <Area pt='20'>
-                          <Button bcolor='green' color='white' border='1'>
+                          <Button ml='auto' mr='auto' bcolor='green' color='white' border='1'>
                             <Text fs='15'> Зарегистрироваться </Text>
                           </Button>
                         </Area>

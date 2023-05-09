@@ -8,8 +8,7 @@ interface InputProps {
 
 const Input = styled.input<InputProps>`
   font-size: 13px;
-  margin-left: auto;
-  margin-right: auto;
+
   height: 35px;
   border-radius: 6px;
   outline: none;

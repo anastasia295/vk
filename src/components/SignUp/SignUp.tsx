@@ -69,8 +69,8 @@ function SignUp() {
               </Text>
             </Area>
           </Flexbox>
-          <Flexbox display='block'>
-            <Area mt='15'>
+          <Flexbox>
+            <Area mt='15' ml='33'>
               <Input bcolor='#f5fffa' width='237' placeholder='Введите номер телефона' />
             </Area>
           </Flexbox>
@@ -82,7 +82,7 @@ function SignUp() {
           </Area>
 
           <Area mt='30' width='100%'>
-            <Button bcolor='#0000ff' color='white' border='#0000ff'>
+            <Button ml='auto' mr='auto' bcolor='#0000ff' color='white' border='#0000ff'>
               Продолжить
             </Button>
           </Area>

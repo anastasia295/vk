@@ -1,13 +1,20 @@
 import styled from 'styled-components';
 
+function getNumber(num?: string) {
+  if (typeof num === 'number') {
+    return `${num}%`;
+  }
+  return num;
+}
+
 const Button = styled.button<ButtonProps>`
   width: 293px;
   height: 40px;
   font-size: 12px;
   border-radius: 10px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-right: ${(props) => getNumber(props.mr)};
+  margin-left: ${(props) => getNumber(props.ml)};
   border: 1px solid #eee;
   border: ${(props) => props.border}px solid #eee;
   background-color: ${(props) => props.bcolor};

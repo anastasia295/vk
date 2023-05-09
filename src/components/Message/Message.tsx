@@ -33,98 +33,49 @@ const Friends = [
 function Message() {
   return (
     <LayoutWrapper>
-      <Area bcolor='#f5fffa' height='100vh' width='100%'>
-        <Area bcolor='white' width='100%' height='55'>
-          <Area maxWidth='1360' width='100%' mr='auto' ml='auto'>
-            <Flexbox display='flex' justifyContent='space-between' aitems='center'>
-              <Flexbox display='flex' direction='row'>
-                <Area mt='3'>
-                  <Img height='50' width='155' src={svgImage} alt='' />
-                </Area>
-                <Area margin='10' pl='15'>
-                  <Input width='225' placeholder='Поиск' />
-                  <Area ml='1' mt='-25'>
-                    <Img height='16' width='21' src={lupa} alt='' />
-                  </Area>
-                </Area>
-              </Flexbox>
-              <Text fs='12' fw='bold'>
-                Switch to English
-              </Text>
-            </Flexbox>
-            <Flexbox>
-              {ITEMS.map(({ name, route, img }) => {
-                return (
-                  <>
-                    <Area mt='15' pl='38'>
-                      <Text fs='15'>{name}</Text>
-                    </Area>
-                    <Area mt='-19' ml='7'>
-                      <Img width='25' height='25' src={img} alt='' />
-                    </Area>
-                  </>
-                );
-              })}
-            </Flexbox>
-
-            <Flexbox>
-              <Area
-                mt='-195'
-                ml='180'
-                width='750'
-                height='800'
-                bcolor='white'
-                border='1'
-                bradius='15'
-              >
-                {' '}
-                <Area>
-                  <Input color='white' width='700' placeholder='Поиск' />
-                  <Area ml='4' mt='-28'>
-                    <Img height='16' width='21' src={lupa} alt='' />
-                  </Area>
-                </Area>
-                {Friends.map(({ name, route, img, mes }) => {
-                  return (
-                    <>
-                      <Area bbottom='0.01' mt='15' pl='75'>
-                        <Text fs='21'>{name}</Text>
-                        <Area mt='8' ml=''>
-                          <Img bradius='50' width='25' height='25' src={img} alt='' />
-                        </Area>
-                        <Area mt='-23' ml='37'>
-                          <Text fs='15'>{mes}</Text>
-                        </Area>
-                      </Area>
-                      <Flexbox display='inline-block'>
-                        <Area mt='-45' ml='7'>
-                          <Img bradius='50' width='55' height='55' src={img} alt='' />
-                        </Area>
-                      </Flexbox>
-                    </>
-                  );
-                })}
-              </Area>
-            </Flexbox>
-            <Area
-              mt='-800'
-              ml='960'
-              width='400'
-              height='100'
-              bcolor='white'
-              border='1'
-              bradius='10'
-            >
-              <Area mt='15' ml='15'>
-                <Text fs='17'>Все чаты</Text>{' '}
-              </Area>
-              <Area mt='15' ml='15'>
-                <Text fs='17'>Непрочитанные</Text>{' '}
+      <Flexbox display='flex' direction='row'>
+        <Flexbox>
+          <Area ml='80' width='750' height='800' bcolor='white' border='1' bradius='15'>
+            <Area>
+              <Input color='white' width='700' placeholder='Поиск' />
+              <Area position='relative' top='-27' left='5'>
+                <Img height='16' width='21' src={lupa} alt='' />
               </Area>
             </Area>
+            {Friends.map(({ name, route, img, mes }) => {
+              return (
+                <>
+                  <Flexbox display='flex' direction='row'>
+                    <Area mt='7' ml='25'>
+                      <Img bradius='50' width='55' height='55' src={img} alt='' />
+                    </Area>
+                    <Area bbottom='0.01' pl='13' width='100%'>
+                      <Text fs='21'>{name}</Text>
+                      <Area mt='' ml=''>
+                        <Img bradius='50' width='25' height='25' src={img} alt='' />
+                      </Area>
+                      <Area mt='-26' ml='37'>
+                        <Text fs='15'>{mes}</Text>
+                      </Area>
+                    </Area>
+                  </Flexbox>
+                </>
+              );
+            })}
           </Area>
-        </Area>
-      </Area>
+        </Flexbox>
+
+        <Flexbox>
+          <Area ml='15' width='400' height='100' bcolor='white' border='1' bradius='10'>
+            <Area mt='15' ml='15'>
+              <Text fs='17'>Все чаты</Text>
+            </Area>
+            <Area mt='15' ml='15'>
+              <Text fs='17'>Непрочитанные</Text>
+            </Area>
+          </Area>
+        </Flexbox>
+      </Flexbox>
     </LayoutWrapper>
   );
 }

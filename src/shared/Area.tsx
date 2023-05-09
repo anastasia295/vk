@@ -17,6 +17,12 @@ interface AreaProps {
   border?: string;
   bbottom?: string;
   ta?: string;
+  pb?: string;
+  position?: 'static' | 'relative' | 'absolute' | 'fixed' | 'sticky';
+  top?: string;
+  bottom?: string;
+  left?: string;
+  right?: string;
 }
 const getMargin = (margin?: string): string => (margin === 'auto' ? margin : `${margin}px`);
 const getPadding = (padding?: string): string => (padding === 'auto' ? padding : `${padding}px`);
@@ -50,9 +56,15 @@ const Area = styled.div<AreaProps>`
   width: ${(props) => getNumber(props.width)};
   height: ${(props) => getNumber(props.height)};
   text-align: ${(props) => props.ta};
-  border-bottom: ${(props) => props.bbottom}px solid #c0c0c0;
+  border-bottom: ${(props) => props.bbottom}px solid #e8e8e8;
+  padding-bottom: ${(props) => props.pb}px;
+  position: ${(props) => props.position};
 
   border: ${(props) => props.border}px solid #eee;
+  top: ${(props) => props.top}px;
+  left: ${(props) => props.left}px;
+  right: ${(props) => props.right}px;
+  bottom: ${(props) => props.bottom}px;
 `;
 
 export default Area;
