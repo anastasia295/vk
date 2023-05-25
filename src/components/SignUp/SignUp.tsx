@@ -21,10 +21,10 @@ function SignUp() {
             <Img width='25' height='35' src={vk} alt=''></Img>
           </Area>
           <Area mt='-30' mr='240'>
-            <Text fs='20'>ID</Text>
+            <Text font-size='20'>ID</Text>
           </Area>
           <Area width='250' mt='15' pl='20'>
-            <Text fs='19' ta='left' lheight=''>
+            <Text font-size='19' text-align='left'>
               ВКонтакте можно войти через VK ID
             </Text>
           </Area>
@@ -32,7 +32,7 @@ function SignUp() {
             <Img width='25' height='25' src={account} alt='' />
           </Area>
           <Area mt='-25' pl='66'>
-            <Text fs='15' color='#808080' lheight='' ta='left'>
+            <Text font-size='15' color='#808080' text-align='left'>
               Единый аккаунт для сервисов VK и партнёров
             </Text>
           </Area>
@@ -41,7 +41,7 @@ function SignUp() {
           </Area>
 
           <Area mt='-25' pl='66'>
-            <Text fs='15' color='#808080' lheight='' ta='left'>
+            <Text font-size='15' color='#808080' text-align='left'>
               Быстрый вход в одно нажатие
             </Text>
           </Area>
@@ -49,22 +49,22 @@ function SignUp() {
             <Img width='25' height='25' src={protection1} alt='' />
           </Area>
           <Area mt='-30' pl='66'>
-            <Text fs='15' color='#808080' lheight='' ta='left'>
+            <Text font-size='15' color='#808080' text-align='left'>
               Надёжная защита с привязкой к телефону
             </Text>
           </Area>
           <Area mt='139' pl='27'>
-            <Text color='#1e90ff' ta='left' fs='15'>
+            <Text color='#1e90ff' text-align='left' font-size='15'>
               Подробнее о VK ID
             </Text>
           </Area>
         </Content>
         <Content bcolor='white'>
           <Img width='60' height='80' src={vk} alt=''></Img>
-          <Text fs='22'>Введите номер</Text>
+          <Text font-size='22'>Введите номер</Text>
           <Flexbox display='block'>
             <Area width='300' ml='auto' mr='auto' mt='15'>
-              <Text color='#808080' fs='15'>
+              <Text color='#808080' font-size='15'>
                 Ваш номер телефона будет использоваться для входа в аккаунт
               </Text>
             </Area>
@@ -75,7 +75,7 @@ function SignUp() {
             </Area>
           </Flexbox>
           <Area mt='10' ml='10'>
-            <Text fs='18' color='#808080' ta='left'>
+            <Text font-size='18' color='#808080' text-align='left'>
               <Inputcheckbox width='20' height='20' type='checkbox' name='happy' value='yes' />
               Сохранить вход
             </Text>
@@ -89,7 +89,7 @@ function SignUp() {
 
           <Flexbox display='block'>
             <Area mt='40' pl='30' mr='' width='300'>
-              <Text color='#808080' fs='12'>
+              <Text color='#808080' font-size='12'>
                 Нажимая «Продолжить», вы принимаете пользовательское соглашение и политику
                 конфиденциальности
               </Text>

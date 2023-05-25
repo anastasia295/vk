@@ -4,6 +4,7 @@ interface InputProps {
   width?: string;
   bradius?: string;
   bcolor?: string;
+  height?: string;
 }
 
 const Input = styled.input<InputProps>`
@@ -17,6 +18,7 @@ const Input = styled.input<InputProps>`
   padding: 2px 25px;
 
   width: ${(props) => props.width}px;
+  height: ${(props) => props.height}px;
   border-radius: ${(props) => props.bradius}px;
   background-color: ${(props) => props.bcolor};
 `;

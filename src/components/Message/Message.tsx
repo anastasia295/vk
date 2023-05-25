@@ -50,12 +50,12 @@ function Message() {
                       <Img bradius='50' width='55' height='55' src={img} alt='' />
                     </Area>
                     <Area bbottom='0.01' pl='13' width='100%'>
-                      <Text fs='21'>{name}</Text>
+                      <Text font-size='21'>{name}</Text>
                       <Area mt='' ml=''>
                         <Img bradius='50' width='25' height='25' src={img} alt='' />
                       </Area>
                       <Area mt='-26' ml='37'>
-                        <Text fs='15'>{mes}</Text>
+                        <Text font-size='15'>{mes}</Text>
                       </Area>
                     </Area>
                   </Flexbox>
@@ -68,10 +68,10 @@ function Message() {
         <Flexbox>
           <Area ml='15' width='400' height='100' bcolor='white' border='1' bradius='10'>
             <Area mt='15' ml='15'>
-              <Text fs='17'>Все чаты</Text>
+              <Text font-size='17'>Все чаты</Text>
             </Area>
             <Area mt='15' ml='15'>
-              <Text fs='17'>Непрочитанные</Text>
+              <Text font-size='17'>Непрочитанные</Text>
             </Area>
           </Area>
         </Flexbox>

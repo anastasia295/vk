@@ -1,0 +1,59 @@
+[33mcommit f906fa64c7483e34c5880d0bfc8a185cc9f9728f[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/auth[m[33m, [m[1;31morigin/feature/auth[m[33m)[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Tue May 9 17:00:41 2023 +0600
+
+    изменена авторизация и регистрация
+
+[33mcommit 97f559e66d9ebf768de02e4f0f09a94cfa2a3965[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Fri Apr 7 18:59:23 2023 +0600
+
+    изменения
+
+[33mcommit 14a226c169be23b3dde1c7c0709ff8689fb0daab[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Sun Mar 26 15:15:31 2023 +0600
+
+    изменена авторизация и регистрация
+
+[33mcommit a0a2c5ebf178630f44c90826cbb6ddd343e1714f[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Fri Mar 3 18:49:27 2023 +0600
+
+    решим проблемы
+
+[33mcommit 59d434c70a010f17e1c2f0a3bfc2140d79239e84[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Thu Feb 23 15:44:57 2023 +0600
+
+    добавила форматирование
+
+[33mcommit f3b2de74ae50d78f4b878640aee4cbed03832084[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Sat Feb 11 18:17:08 2023 +0600
+
+    коммит
+
+[33mcommit 2e01267d7ac97ca44338ec504b78313feb2902ec[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Sat Feb 11 18:13:32 2023 +0600
+
+    папка public
+
+[33mcommit c75349b0ece25519457d358559360a1362767843[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Sat Feb 11 18:09:34 2023 +0600
+
+    первый коммит
+
+[33mcommit 83725b6537391927d6eb08608644143565b918f0[m[33m ([m[1;32mmain[m[33m)[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Sat Feb 11 17:43:17 2023 +0600
+
+    первый коммит
+
+[33mcommit ccf5d0f3c4f1892cb52b73503c0d80e986ad63f3[m
+Author: anastasia295 <nastyufka.sergeeva@gmail.com>
+Date:   Sat Jan 7 21:48:46 2023 +0600
+
+    Initialize project using Create React App

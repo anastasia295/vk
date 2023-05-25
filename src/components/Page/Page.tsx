@@ -39,20 +39,20 @@ function Page() {
                 <Img bradius='200' height='160' width='160' src={avatar} alt='' />
               </Area>
               <Area ml='200' mt='-120'>
-                <Text fs='15' fw='bold'>
+                <Text font-size='15' font-weight='bold'>
                   Петр Иванов
                 </Text>
               </Area>
               <Flexbox display='flex' direction='row' justifyContent='flex-end'>
                 <Button bcolor='#f5fffa' width='220' height='28' mr='10' mt='-15'>
                   <Link to='/Settings'>
-                    <Text fw='bold' color='#2271B3'>
+                    <Text font-weight='bold' color='#2271B3'>
                       Редактировать профиль
                     </Text>
                   </Link>
                 </Button>
                 <Button bcolor='#f5fffa' width='75' height='28' mr='25' mt='-15'>
-                  <Text fw='bold' color='#2271B3'>
+                  <Text font-weight='bold' color='#2271B3'>
                     Еще
                   </Text>
                   <Area mt='-12' ml='39'>

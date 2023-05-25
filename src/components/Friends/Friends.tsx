@@ -27,17 +27,17 @@ function Friends() {
           <Area mt='' ml='80' width='750' height='800' bcolor='white' border='1' bradius='15'>
             <Flexbox display='flex' direction='row'>
               <Button bcolor='white' width='110' height='28' ml='25' mt='15'>
-                <Text color='#2271B3' fw='bold'>
+                <Text color='#2271B3' font-weight='bold'>
                   Все друзья
                 </Text>
               </Button>
               <Button bcolor='white' width='115' height='28' ml='10' mt='15'>
-                <Text color='	#787878' fw='bold'>
+                <Text color='	#787878' font-weight='bold'>
                   Друзья онлайн
                 </Text>
               </Button>
               <Button bcolor='#2271B3' width='99' height='31' ml='367' mt='15'>
-                <Text fw='bold' color='white'>
+                <Text font-Size='255' font-weight='bold' color='white'>
                   Найти друзей
                 </Text>
               </Button>
@@ -67,10 +67,10 @@ function Friends() {
                       <Img bradius='500' width='95' height='95' src={img} alt='' />
                     </Area>
                     <Area bbottom='0.01' pl='13' width='100%'>
-                      <Text fs='21'>{name}</Text>
+                      <Text font-size='21'>{name}</Text>
 
                       <Area mt='25'>
-                        <Text fs='15'>{communication}</Text>
+                        <Text font-size='15'>{communication}</Text>
                       </Area>
                     </Area>
                   </Flexbox>
@@ -83,13 +83,13 @@ function Friends() {
         <Flexbox>
           <Area ml='15' width='400' height='130' bcolor='white' border='1' bradius='10'>
             <Area mt='16' ml='15'>
-              <Text fs='17'>Мои друзья</Text>
+              <Text font-size='17'>Мои друзья</Text>
             </Area>
             <Area mt='16' ml='15'>
-              <Text fs='17'>Заявки в друзья</Text>
+              <Text font-size='17'>Заявки в друзья</Text>
             </Area>
             <Area mt='16' ml='15'>
-              <Text fs='17'>Поиск друзей</Text>
+              <Text font-size='17'>Поиск друзей</Text>
             </Area>
           </Area>
         </Flexbox>

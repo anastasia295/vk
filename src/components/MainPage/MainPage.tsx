@@ -47,7 +47,7 @@ function MainPage() {
                   </Area>
                 </Area>
               </Flexbox>
-              <Text fs='12' fw='bold'>
+              <Text font-size='12' font-weight='bold'>
                 Switch to English
               </Text>
             </Flexbox>
@@ -58,7 +58,7 @@ function MainPage() {
                     <>
                       <Area mt='15' pl='38'>
                         <Link to={to}>
-                          <Text wspace='nowrap' fs='15'>
+                          <Text white-space='nowrap' font-size='15'>
                             {name}
                           </Text>
                         </Link>

@@ -30,7 +30,7 @@ function SignIn() {
                   </Area>
                 </Area>
               </Flexbox>
-              <Text fs='12' fw='bold'>
+              <Text font-size='12' font-weight='bold'>
                 Switch to English
               </Text>
             </Flexbox>
@@ -39,12 +39,12 @@ function SignIn() {
                 <Flexbox display='flex' justifyContent='space-around' aitems='center'>
                   <Flexbox>
                     <Area width='590' mt='35'>
-                      <Text fs='25' fw='bold' ta='center'>
+                      <Text font-size='25' font-weight='bold' text-align='center'>
                         ВКонтакте для мобильных устройств
                       </Text>
                     </Area>
                     <Area width='590' mt='10'>
-                      <Text fs='15' ta='center' color='#808080'>
+                      <Text font-size='15' text-align='center' color='#808080'>
                         Установите официальное мобильное приложение ВКонтакте и оставайтесь в курсе
                         новостей ваших друзей, где бы вы ни находились.
                       </Text>
@@ -61,7 +61,7 @@ function SignIn() {
                           <Img height='70' width='50' src={vk} alt='' />
                         </Area>
 
-                        <Text fs='19' fw='bold' ta='center'>
+                        <Text font-size='19' font-weight='bold' text-align='center'>
                           Вход ВКонтакте
                         </Text>
                         <Area mt='20' ml='auto' mr='auto'>
@@ -73,7 +73,7 @@ function SignIn() {
                           />
                         </Area>
                         <Area mt='10'>
-                          <Text fs='18' color='#808080' ta='left'>
+                          <Text font-size='18' color='#808080' text-align='left'>
                             <Inputcheckbox
                               width='20'
                               height='20'
@@ -86,17 +86,17 @@ function SignIn() {
                         </Area>
                         <Area mt='40'>
                           <Button ml='auto' mr='auto' bcolor='#0000ff' color='white'>
-                            <Text fs='15'> Войти </Text>
+                            <Text font-size='15'> Войти </Text>
                           </Button>
                         </Area>
                         <Area mb='15' mt='25'>
-                          <Text fs='12' ta='center' color='#808080'>
+                          <Text font-size='12' text-align='center' color='#808080'>
                             или
                           </Text>
                         </Area>
                         <Area mt='25'>
                           <Button ml='auto' mr='auto' bcolor='white'>
-                            <Text fs='15'>QR-код </Text>
+                            <Text font-size='15'>QR-код </Text>
                           </Button>
                         </Area>
                       </Flexbox>
@@ -105,11 +105,11 @@ function SignIn() {
                       <Flexbox>
                         <Area pt='20'>
                           <Button ml='auto' mr='auto' bcolor='green' color='white' border='1'>
-                            <Text fs='15'> Зарегистрироваться </Text>
+                            <Text font-size='15'> Зарегистрироваться </Text>
                           </Button>
                         </Area>
                         <Area width='280' mt='17' ml='30'>
-                          <Text fs='15' ta='center' color='#808080'>
+                          <Text font-size='15' text-align='center' color='#808080'>
                             После регистрации вы получите доступ ко всем возможностям VK ID Узнать
                             больше
                           </Text>
