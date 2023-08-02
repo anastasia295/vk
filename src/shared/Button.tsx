@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+/*import styled from 'styled-components';
 
 function getNumber(num?: string) {
   if (typeof num === 'number') {
@@ -36,5 +36,46 @@ interface ButtonProps {
   width?: string;
   height?: string;
 }
+
+export default Button; **/
+import styled from 'styled-components';
+
+import {
+  ColorProps,
+  TypographyProps,
+  SpaceProps,
+  LayoutProps,
+  BackgroundProps,
+  BorderProps,
+  PositionProps,
+  position,
+  color,
+  layout,
+  typography,
+  space,
+  background,
+  border,
+  BackgroundColorProps,
+} from 'styled-system';
+
+const Button = styled.button<
+  TypographyProps &
+    SpaceProps &
+    ColorProps &
+    LayoutProps &
+    BackgroundColorProps &
+    BorderProps &
+    PositionProps
+>`
+  ${color}
+  ${layout}
+${typography}
+
+  ${space}
+  
+  ${background}
+  ${border}
+${position}
+`;
 
 export default Button;

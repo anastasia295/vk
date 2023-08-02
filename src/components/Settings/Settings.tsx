@@ -59,173 +59,205 @@ function Settings() {
   const years = currentYear - FIRST_YEAR;
 
   return (
-    <LayoutWrapper>
-      <Flexbox display='flex' direction='row'>
-        <Flexbox>
-          <Area ml='80' width='650' height='400' bcolor='white' border='1' bradius='15'>
-            <Area ml='25' mt='35' height='60'>
-              <Text font-size='18'>Профиль</Text>
-            </Area>
-            <Area height='140' bcolor='#f5fffa'></Area>
-            <Flexbox display='flex' direction='row' justifyContent='space-around'>
-              <Area mt='-66'>
-                <Img bradius='100' height='126' width='136' src={avatar} alt='' />
-              </Area>
-              <Area mt='25'>
-                <Text font-size='18' font-weight='bold'>
-                  Петр Иванов
-                </Text>
-              </Area>
-              <Area mt='25'>
-                <Text color='#2271B3'>Изменить в VK ID</Text>
-              </Area>
-            </Flexbox>
-            <Area mt='25' ml='20' width='610' bbottom='1'></Area>
-            <Flexbox display='flex' direction='row' justifyContent='space-around'>
-              <Area mt='28'>
-                <Text>Никнейм</Text>
-              </Area>
-              <Area mt='28'>
-                <Text>https://vk.com/id174982055</Text>
-              </Area>
-              <Area mt='28'>
-                <Text color='#2271B3'>Изменить</Text>
-              </Area>
-            </Flexbox>
+    <Flexbox display='flex' flexDirection='row'>
+      <Flexbox>
+        <Area
+          mt={3}
+          ml={60}
+          width={680}
+          height={400}
+          backgroundColor='white'
+          border={1}
+          borderRadius={15}
+        >
+          <Area pt={25} ml={25} mt={10} height={60}>
+            <Text font-size={18}>Профиль</Text>{' '}
           </Area>
-          <Area mt='25' ml='80' width='650' height='800' bcolor='white' border='1' bradius='15'>
-            <Flexbox>
-              <Area mt='30' ml='20'>
-                <Flexbox display='flex' direction='row'>
-                  <Area width='200'>
-                    <Flexbox display='flex' justifyContent='flex-end'>
-                      <Area mt='5' mr='20'>
-                        <Text> Краткая информация:</Text>
-                      </Area>
-                    </Flexbox>
-                  </Area>
-                  <Area width='350'>
-                    <Flexbox display='flex' justifyContent='flex-start'>
-                      <Input
-                        style={{ width: '345px', height: '100px' }}
-                        placeholder='Расскажите о себе'
-                      ></Input>
-                    </Flexbox>
-                  </Area>
-                </Flexbox>
-              </Area>
-              <Area mt='30' ml='20'>
-                <Flexbox display='flex' direction='row'>
-                  <Area width='200'>
-                    <Flexbox display='flex' justifyContent='flex-end'>
-                      <Area mt='5' mr='20'>
-                        <Text>Семейное положение:</Text>
-                      </Area>
-                    </Flexbox>
-                  </Area>
-                  <Area width='350'>
-                    <Flexbox display='flex' justifyContent='flex-start'>
-                      <select name='fstatus' style={{ width: '345px', height: '30px' }}>
-                        <option value='не выбрано'>не выбрано</option>
-                        <option value='не замужем'>не замужем</option>
-                        <option value='влюблена'>влюблена</option>
-                        <option value='в активном поиске'>в активном поиске</option>
-                      </select>
-                    </Flexbox>
-                  </Area>
-                </Flexbox>
-              </Area>
-              <Area mt='30' ml='20'>
-                <Flexbox display='flex' direction='row'>
-                  <Area width='200'>
-                    <Flexbox display='flex' justifyContent='flex-end'>
-                      <Area mt='5' mr='20'>
-                        <Text>Родной город:</Text>
-                      </Area>
-                    </Flexbox>
-                  </Area>
-                  <Area width='345'>
-                    <Flexbox display='flex' justifyContent='flex-end'>
-                      <Input width='355' height='25'></Input>
-                    </Flexbox>
-                  </Area>
-                </Flexbox>
-              </Area>
-              <Area mt='30' ml='20'>
-                <Flexbox display='flex' direction='row'>
-                  <Area width='200'>
-                    <Flexbox display='flex' justifyContent='flex-end'>
-                      <Area mt='5' mr='20'>
-                        <Text>Дата рождения:</Text>
-                      </Area>
-                    </Flexbox>
-                  </Area>
+
+          <Area height={140} backgroundColor='#f5fffa'></Area>
+          <Flexbox display='flex' flexDirection='row' justifyContent='space-around'>
+            <Area mt={-66}>
+              <Img borderRadius={100} height={126} width={136} src={avatar} alt='' />
+            </Area>
+            <Area mt={25}>
+              <Text fontSize={18} fontWeight='bold'>
+                Петр Иванов
+              </Text>
+            </Area>
+            <Area mt={25}>
+              <Text color='#2271B3'>Изменить в VK ID</Text>
+            </Area>
+          </Flexbox>
+          <Area mt={25} ml={20} width={610} borderBottom={1}></Area>
+          <Flexbox display='flex' flexDirection='row' justifyContent='space-around'>
+            <Area mt={28}>
+              <Text>Никнейм</Text>
+            </Area>
+            <Area mt={28}>
+              <Text>https://vk.com/id174982055</Text>
+            </Area>
+            <Area mt={28}>
+              <Text color='#2271B3'>Изменить</Text>
+            </Area>
+          </Flexbox>
+        </Area>
+        <Area
+          mt={25}
+          ml={80}
+          width={650}
+          height={800}
+          backgroundColor='white'
+          border={1}
+          borderRadius={15}
+        >
+          <Flexbox>
+            <Area mt={30} ml={20}>
+              <Flexbox display='flex' flexDirection='row'>
+                <Area mt={25} width={200}>
                   <Flexbox display='flex' justifyContent='flex-end'>
-                    <Flexbox display='flex' direction='row'>
-                      <Area mr='15'>
-                        <select
-                          style={{ width: '60px', height: '30px' }}
-                          onChange={(e) => setMonth(+e.target.value)}
-                        >
-                          {new Array(getDaysInMonth(month, 2000))
-                            .fill(0)
-                            .map((val, index) => index + 1)
-                            .map((day) => {
-                              return (
-                                <option key={day} value={day}>
-                                  {day}
-                                </option>
-                              );
-                            })}
-                        </select>
-                      </Area>
-                      <Area mr='15'>
-                        <select
-                          style={{ width: '80px', height: '30px' }}
-                          onChange={(e) => setMonth(+e.target.value)}
-                        >
-                          {MONTHS.map((month) => (
-                            <option value={month.value} key={month.value}>
-                              {month.label}
-                            </option>
-                          ))}
-                        </select>{' '}
-                      </Area>
-                      <Area>
-                        <select style={{ width: '80px', height: '30px' }}>
-                          {new Array(years).fill(0).map((calue, index) => (
-                            <option key={calue.value}>{index + FIRST_YEAR}</option>
-                          ))}
-                        </select>
-                      </Area>
-                    </Flexbox>
+                    <Area mt={5} mr={20}>
+                      <Text> Краткая информация:</Text>
+                    </Area>
+                  </Flexbox>
+                </Area>
+                <Area mt={25} width={350}>
+                  <Flexbox display='flex' justifyContent='flex-start'>
+                    <Input
+                      borderRadius={10}
+                      border='1px solid'
+                      borderColor='#E0E0E0'
+                      width={345}
+                      height={100}
+                      placeholder='Расскажите о себе'
+                    ></Input>
+                  </Flexbox>
+                </Area>
+              </Flexbox>
+            </Area>
+            <Area mt={30} ml={20}>
+              <Flexbox display='flex' flexDirection='row'>
+                <Area width={200}>
+                  <Flexbox display='flex' justifyContent='flex-end'>
+                    <Area mr={20}>
+                      <Text>Семейное положение:</Text>
+                    </Area>
+                  </Flexbox>
+                </Area>
+                <Area width={350}>
+                  <Flexbox display='flex' justifyContent='flex-start'>
+                    <select name='fstatus' style={{ width: '345px', height: '30px' }}>
+                      <option value='не выбрано'>не выбрано</option>
+                      <option value='не замужем'>не замужем</option>
+                      <option value='влюблена'>влюблена</option>
+                      <option value='в активном поиске'>в активном поиске</option>
+                    </select>
+                  </Flexbox>
+                </Area>
+              </Flexbox>
+            </Area>
+            <Area mt={30} ml={20}>
+              <Flexbox display='flex' flexDirection='row'>
+                <Area width={200}>
+                  <Flexbox display='flex' justifyContent='flex-end'>
+                    <Area mr={20}>
+                      <Text>Родной город:</Text>
+                    </Area>
+                  </Flexbox>
+                </Area>
+                <Area width={345}>
+                  <Flexbox display='flex' justifyContent='flex-end'>
+                    <Input
+                      borderRadius={10}
+                      border='1px solid'
+                      borderColor='#E0E0E0'
+                      width={355}
+                      height={25}
+                    ></Input>
+                  </Flexbox>
+                </Area>
+              </Flexbox>
+            </Area>
+            <Area mt={30} ml={20}>
+              <Flexbox display='flex' flexDirection='row'>
+                <Area width={200}>
+                  <Flexbox display='flex' justifyContent='flex-end'>
+                    <Area mr={20}>
+                      <Text>Дата рождения:</Text>
+                    </Area>
+                  </Flexbox>
+                </Area>
+                <Flexbox display='flex' justifyContent='flex-end'>
+                  <Flexbox display='flex' flexDirection='row'>
+                    <Area mr={15}>
+                      <select
+                        style={{ width: '60px', height: '30px' }}
+                        onChange={(e) => setMonth(+e.target.value)}
+                      >
+                        {new Array(getDaysInMonth(month, 2000))
+                          .fill(0)
+                          .map((val, index) => index + 1)
+                          .map((day) => {
+                            return (
+                              <option key={day} value={day}>
+                                {day}
+                              </option>
+                            );
+                          })}
+                      </select>
+                    </Area>
+                    <Area mr={15}>
+                      <select
+                        style={{ width: '80px', height: '30px' }}
+                        onChange={(e) => setMonth(+e.target.value)}
+                      >
+                        {MONTHS.map((month) => (
+                          <option value={month.value} key={month.value}>
+                            {month.label}
+                          </option>
+                        ))}
+                      </select>{' '}
+                    </Area>
+                    <Area>
+                      <select style={{ width: '80px', height: '30px' }}>
+                        {new Array(years).fill(0).map((calue, index) => (
+                          <option key={calue.value}>{index + FIRST_YEAR}</option>
+                        ))}
+                      </select>
+                    </Area>
                   </Flexbox>
                 </Flexbox>
-              </Area>
-              <Area mt='45' ml='20' width='610' bbottom='1'></Area>
-
-              <Area mt='30' ml='215'>
-                <Button width='90' bcolor='#1E90FF'>
-                  <Text color='white'>Сохранить</Text>
-                </Button>
-              </Area>
-            </Flexbox>
-          </Area>
-        </Flexbox>
-
-        <Flexbox>
-          <Area ml='15' width='400' height='100' bcolor='white' border='1' bradius='10'>
-            <Area mt='15' ml='15'>
-              <Text font-size='17'>Личные данные</Text>
-              <Text font-size='12'>Имя, фамилия, дата рождения, пол</Text>
+              </Flexbox>
             </Area>
-            <Area mt='15' ml='15'>
-              <Text font-size='17'>Профиль</Text>
+            <Area mt={45} ml={20} width={610} borderBottom={1}></Area>
+
+            <Area mt={30} ml={215}>
+              <Button
+                border='1px solid'
+                borderColor='#1E90FF'
+                height={31}
+                borderRadius={10}
+                width={90}
+                backgroundColor='#1E90FF'
+              >
+                <Text color='white'>Сохранить</Text>
+              </Button>
             </Area>
-          </Area>
-        </Flexbox>
+          </Flexbox>
+        </Area>
       </Flexbox>
-    </LayoutWrapper>
+
+      <Flexbox>
+        <Area ml={20} width={300} height={100} backgroundColor='white' border={1} borderRadius={10}>
+          <Area mt={10} ml={15}>
+            <Text fontSize={17}>Личные данные</Text>
+            <Text fontSize={12}>Имя, фамилия, дата рождения, пол</Text>
+          </Area>
+          <Area mt={15} ml={15}>
+            <Text fontSize={17}>Профиль</Text>
+          </Area>
+        </Area>
+      </Flexbox>
+    </Flexbox>
   );
 }
 

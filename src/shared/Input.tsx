@@ -1,26 +1,42 @@
 import styled from 'styled-components';
 
-interface InputProps {
-  width?: string;
-  bradius?: string;
-  bcolor?: string;
-  height?: string;
-}
+import {
+  ColorProps,
+  TypographyProps,
+  SpaceProps,
+  LayoutProps,
+  BackgroundProps,
+  BorderProps,
+  PositionProps,
+  position,
+  color,
+  layout,
+  typography,
+  space,
+  background,
+  border,
+  BackgroundColorProps,
+} from 'styled-system';
 
-const Input = styled.input<InputProps>`
-  font-size: 13px;
+const Input = styled.input<
+  TypographyProps &
+    SpaceProps &
+    ColorProps &
+    LayoutProps &
+    BackgroundColorProps &
+    BorderProps &
+    PositionProps
+>`
+  ${color}
+  ${layout}
+${typography}
 
-  height: 35px;
-  border-radius: 6px;
+  ${space}
   outline: none;
-  border: 1px solid #eee;
-  display: block;
-  padding: 2px 25px;
 
-  width: ${(props) => props.width}px;
-  height: ${(props) => props.height}px;
-  border-radius: ${(props) => props.bradius}px;
-  background-color: ${(props) => props.bcolor};
+  ${background}
+  ${border}
+${position}
 `;
 
 export default Input;

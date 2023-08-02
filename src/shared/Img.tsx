@@ -1,14 +1,41 @@
 import styled from 'styled-components';
+import {
+  ColorProps,
+  TypographyProps,
+  SpaceProps,
+  LayoutProps,
+  BackgroundProps,
+  BorderProps,
+  PositionProps,
+  position,
+  color,
+  layout,
+  typography,
+  space,
+  background,
+  border,
+  BackgroundColorProps,
+} from 'styled-system';
 
-const Img = styled.img<ImgProps>`
-  height: ${(props) => props.height}px;
-  width: ${(props) => props.width}px;
-  border-radius: ${(props) => props.bradius}px;
+const Img = styled.img<
+  TypographyProps &
+    SpaceProps &
+    ColorProps &
+    LayoutProps &
+    BackgroundColorProps &
+    BorderProps &
+    PositionProps
+>`
+  ${color}
+  ${layout}
+${typography}
+
+  ${space}
+  outline: none;
+
+  ${background}
+  ${border}
+${position}
 `;
 
-interface ImgProps {
-  height?: string;
-  width?: string;
-  bradius?: string;
-}
 export default Img;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+/* import styled from 'styled-components';
 
 interface AreaProps {
   mr?: string;
@@ -65,6 +65,47 @@ const Area = styled.div<AreaProps>`
   left: ${(props) => props.left}px;
   right: ${(props) => props.right}px;
   bottom: ${(props) => props.bottom}px;
+`;
+
+export default Area; **/
+import styled from 'styled-components';
+
+import {
+  ColorProps,
+  TypographyProps,
+  SpaceProps,
+  LayoutProps,
+  BackgroundProps,
+  BorderProps,
+  PositionProps,
+  position,
+  color,
+  layout,
+  typography,
+  space,
+  background,
+  border,
+  BackgroundColorProps,
+} from 'styled-system';
+
+const Area = styled.div<
+  TypographyProps &
+    SpaceProps &
+    ColorProps &
+    LayoutProps &
+    BackgroundColorProps &
+    BorderProps &
+    PositionProps
+>`
+  ${color}
+  ${layout}
+${typography}
+
+  ${space}
+
+  ${background}
+  ${border}
+${position}
 `;
 
 export default Area;
