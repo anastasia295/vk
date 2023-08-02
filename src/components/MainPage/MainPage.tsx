@@ -38,7 +38,7 @@ function MainPage() {
         <LayoutWrapper>
           <Flexbox display='flex' justifyContent='space-between' alignItems='center'>
             <Flexbox display='flex'>
-              <Area>
+              <Area ml='-5px'>
                 <Img height={50} width={155} src={svgImage} alt='' />
               </Area>
               <Area position='relative' mt={10} ml={52}>

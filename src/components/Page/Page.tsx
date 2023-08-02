@@ -28,15 +28,7 @@ function Page() {
     <Area width='100%'>
       <Flexbox>
         <Flexbox>
-          <Area
-            mt={3}
-            ml={60}
-            width={1000}
-            height={200}
-            backgroundColor='white'
-            border={1}
-            borderRadius={10}
-          >
+          <Area mt={3} ml={60} height={200} backgroundColor='white' border={1} borderRadius={10}>
             <Area padding={3}>
               <Img borderRadius={200} height={160} width={160} src={avatar} alt='' />
             </Area>
